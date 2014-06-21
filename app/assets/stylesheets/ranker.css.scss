@@ -1,0 +1,66 @@
+/* Colors */
+$white: #fff;
+
+$light-gray: #f3f3f3;
+$border-gray: #ddd;
+$dark-gray: #777;
+
+$dark-blue: #323A45;
+$hot-pink: #FF2E63;
+
+/* Page Styling */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  cursor: default;
+
+  background: $light-gray;
+}
+
+.app-container {
+  width: 500px;
+  margin: 0 auto;
+
+  border: 1px solid $dark-blue;
+
+  >header {
+    padding: 40px;
+
+    background: $dark-blue;
+    text-align: center;
+
+    .logo-large {
+      font-size: 50px;
+      font-weight: 100;
+      color: $white;
+    }
+
+    .logo-small {
+      margin-left: 10px;
+
+      font-size: 37px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      color: $hot-pink;
+    }
+  }
+
+  .votes-left {
+    padding: 12px;
+
+    background: $white;
+    border-bottom: 1px solid $border-gray;
+
+    color: $dark-gray;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .country-rankings {
+    background: $white;
+
+    >li {
+
+    }
+  }
+}
