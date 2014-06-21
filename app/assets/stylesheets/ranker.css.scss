@@ -21,7 +21,8 @@ body {
   width: 500px;
   margin: 0 auto;
 
-  border: 1px solid $dark-blue;
+  border-left: 1px solid $dark-blue;
+  border-right: 1px solid $dark-blue;
 
   >header {
     padding: 40px;
