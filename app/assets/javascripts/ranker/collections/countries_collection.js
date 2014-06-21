@@ -1,5 +1,1 @@
 var Ranker = {} || Ranker;
-
-$(function() {
-
-});
