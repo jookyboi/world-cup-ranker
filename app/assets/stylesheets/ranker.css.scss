@@ -1,5 +1,6 @@
 /* Colors */
 $white: #fff;
+$black: #000;
 
 $light-gray: #f3f3f3;
 $border-gray: #ddd;
@@ -60,7 +61,61 @@ body {
     background: $white;
 
     >li {
+      position: relative;
+      height: 70px;
 
+      border-bottom: 1px solid $border-gray;
+
+      .country-rank {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        padding: 20px;
+        background: $light-gray;
+
+        font-size: 30px;
+        font-weight: 100;
+      }
+
+      // actual flag graphics are defined in flags.scss
+      .country-flag {
+        position: absolute;
+        top: 11px;
+        left: 74px;
+      }
+
+      .country-name {
+        position: absolute;
+        top: 22px;
+        left: 130px;
+
+        font-size: 24px;
+        font-weight: 300;
+      }
+
+      .vote-up {
+        position: absolute;
+        top: 14px;
+        right: 20px;
+        padding: 8px 12px 8px 40px;
+
+        font-size: 24px;
+
+        color: $hot-pink;
+
+        background: url('/assets/icons/thumbs_up.png') no-repeat 12px 50%;
+        border: 1px solid $hot-pink;
+
+        cursor: pointer;
+
+        &:hover {
+          color: $black;
+
+          background-image: url('/assets/icons/thumbs_up_hover.png');
+          border: 1px solid $black;
+        }
+      }
     }
   }
 }
