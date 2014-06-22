@@ -39,7 +39,9 @@ Ranker.CountryView = Backbone.View.extend({
         if (!$button.hasClass("vote-up-disabled")) {
             // bump up votes
             var numVotes = this.model.get("num_votes");
-            this.model.set("num_votes", numVotes + 1);
+
+            // only trigger change event once: on save
+            this.model.set("num_votes", numVotes + 1, { silent: true });
             this.model.save();
         }
     }

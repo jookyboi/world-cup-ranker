@@ -32,6 +32,8 @@ Ranker.AppView = Backbone.View.extend({
     },
 
     sortAndRender: function() {
+        this.decrementVote();
+
         // rankings have to be sorted explicitly after votes change
         this.collection.sort();
         this.render();
@@ -69,6 +71,10 @@ Ranker.AppView = Backbone.View.extend({
         } else {
             return parseInt(tryValue);
         }
+    },
+
+    decrementVote: function() {
+        localStorage["votes_left"] = this.votesLeft() - 1;
     },
 
     canVote: function() {
