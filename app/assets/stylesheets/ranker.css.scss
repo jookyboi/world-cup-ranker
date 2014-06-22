@@ -15,6 +15,8 @@ body {
   cursor: default;
 
   background: $light-gray;
+
+  @include user-select('none');
 }
 
 .app-container {
@@ -71,25 +73,28 @@ body {
         position: absolute;
         top: 0;
         left: 0;
+        width: 34px;
 
         padding: 20px;
         background: $light-gray;
 
         font-size: 30px;
         font-weight: 100;
+
+        text-align: center;
       }
 
       // actual flag graphics are defined in flags.scss
       .country-flag {
         position: absolute;
         top: 11px;
-        left: 74px;
+        left: 90px;
       }
 
       .country-name {
         position: absolute;
         top: 22px;
-        left: 130px;
+        left: 146px;
 
         font-size: 24px;
         font-weight: 300;
@@ -115,6 +120,18 @@ body {
 
           background-image: url('/assets/icons/thumbs_up_hover.png');
           border: 1px solid $black;
+        }
+
+        &.vote-up-disabled {
+          color: $black;
+          border: 1px solid $black;
+
+          background-image: url('/assets/icons/thumbs_up_hover.png');
+          cursor: default;
+
+          &:hover {
+            background-image: url('/assets/icons/thumbs_up_hover.png');
+          }
         }
       }
     }

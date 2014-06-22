@@ -5,7 +5,11 @@
             <span class="logo-small">Ranker</span>
         </header>
         <div class="votes-left">
-            You have 5 votes left
+            {{ if (can_vote) { }}
+                You have {{= votes_left}} votes left
+            {{ } else { }}
+                You have no votes left
+            {{ } }}
         </div>
         <ul class="country-rankings">
         </ul>
@@ -16,7 +20,7 @@
           <div class="country-rank">{{= rank}}</div>
           <div class="country-flag country-flag-{{= country.code}}"></div>
           <div class="country-name">{{= country.name }}</div>
-          <div class="vote-up">{{= country.num_votes }}</div>
+          <div class="vote-up {{if (!can_vote) { }}vote-up-disabled{{ } }}">{{= country.num_votes }}</div>
       </li>
     </script>
 <% end %>
