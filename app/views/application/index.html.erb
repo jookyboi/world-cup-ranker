@@ -1,141 +1,22 @@
 <% content_for :head do %>
+    <script type="text/template" id="app-template">
+        <header>
+            <span class="logo-large">World Cup</span>
+            <span class="logo-small">Ranker</span>
+        </header>
+        <div class="votes-left">
+            You have 5 votes left
+        </div>
+        <ul class="country-rankings">
+        </ul>
+    </script>
 
+    <script type="text/template" id="country-template">
+      <li>
+          <div class="country-rank">1</div>
+          <div class="country-flag country-flag-{{= code}}"></div>
+          <div class="country-name">{{= name }}</div>
+          <div class="vote-up">{{= num_votes }}</div>
+      </li>
+    </script>
 <% end %>
-
-<div class="app-container">
-  <header>
-    <span class="logo-large">World Cup</span>
-    <span class="logo-small">Ranker</span>
-  </header>
-  <div class="votes-left">
-    You have 5 votes left
-  </div>
-  <ul class="country-rankings">
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">204</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-    <li>
-      <div class="country-rank">1</div>
-      <div class="country-flag country-flag-brazil"></div>
-      <div class="country-name">Brazil</div>
-      <div class="vote-up">15</div>
-    </li>
-  </ul>
-</div>

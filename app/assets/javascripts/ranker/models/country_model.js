@@ -1,4 +1,4 @@
-var Ranker = {} || Ranker;
+var Ranker = Ranker || {};
 
 Ranker.CountryModel = Backbone.Model.extend({
     defaults: {
