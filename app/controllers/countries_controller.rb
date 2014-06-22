@@ -4,13 +4,13 @@ class CountriesController < ApplicationController
     render json: countries
   end
 
-  def upvote
-    country = Country.find_by_code(
-        params[:country_code]
-    )
+  def update
+    country = Country.find(params[:id])
 
     country.update_attribute(
-        :num_votes, country.num_votes + 1
+        :num_votes, params[:num_votes]
     )
+
+    render json: country
   end
 end
