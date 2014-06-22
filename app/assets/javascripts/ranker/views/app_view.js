@@ -37,7 +37,7 @@ Ranker.AppView = Backbone.View.extend({
         this.collection.each(function(country, i) {
             var countryView = new Ranker.CountryView({
                 model: country,
-                rank: i
+                rank: i + 1
             });
 
             $countryRankings.append(countryView.el);

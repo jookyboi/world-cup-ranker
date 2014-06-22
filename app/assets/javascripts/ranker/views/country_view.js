@@ -2,15 +2,20 @@ var Ranker = Ranker || {};
 
 Ranker.CountryView = Backbone.View.extend({
     tagName: "li",
+    rank: null,
 
     template: function() {
         return _.template(
             $("#country-template").html(),
-            this.model.toJSON()
+            {
+                country: this.model.toJSON(),
+                rank: this.rank
+            }
         );
     },
 
-    initialize: function() {
+    initialize: function(options) {
+        this.rank = options.rank;
         this.render();
     },
 

@@ -13,10 +13,10 @@
 
     <script type="text/template" id="country-template">
       <li>
-          <div class="country-rank">1</div>
-          <div class="country-flag country-flag-{{= code}}"></div>
-          <div class="country-name">{{= name }}</div>
-          <div class="vote-up">{{= num_votes }}</div>
+          <div class="country-rank">{{= rank}}</div>
+          <div class="country-flag country-flag-{{= country.code}}"></div>
+          <div class="country-name">{{= country.name }}</div>
+          <div class="vote-up">{{= country.num_votes }}</div>
       </li>
     </script>
 <% end %>
