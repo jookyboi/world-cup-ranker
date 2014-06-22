@@ -52,12 +52,15 @@ body {
   .votes-left {
     padding: 12px;
 
-    background: $white;
+    background: $light-gray;
     border-bottom: 1px solid $border-gray;
 
-    color: $dark-gray;
     text-align: center;
     font-weight: bold;
+
+    .votes-left-highlight {
+      color: $hot-pink;
+    }
   }
 
   .country-rankings {

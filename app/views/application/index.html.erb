@@ -6,7 +6,7 @@
         </header>
         <div class="votes-left">
             {{ if (can_vote) { }}
-                You have {{= votes_left}} votes left
+                You have <span class="votes-left-highlight">{{= votes_left}}</span> votes left
             {{ } else { }}
                 You have no votes left
             {{ } }}
